@@ -1,0 +1,40 @@
+header {
+    width: 100%;
+    background: var(--primary);
+    position: fixed;
+    z-index: 1;
+
+    nav {
+        padding: 1.5rem 4rem;
+    
+        ul {
+            display: flex;
+
+            li {
+                position: relative;
+
+                a {
+                    padding: 1.5rem;
+                    color: var(--on-primary);
+                }
+
+                a:hover {
+                    background: var(--primary-variant);
+                }
+            }
+
+            li.active:before {
+                content: "";
+                height: 0.5rem;
+                width: 100%;
+                background: var(--secondary);
+                position: absolute;
+                bottom: -1.5rem;
+            }
+
+            .logged-in {
+                display: none;
+            }
+        }
+    }
+}

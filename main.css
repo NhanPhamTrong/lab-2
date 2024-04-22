@@ -1,0 +1,70 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+a, a:active {
+    text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+button, input[type="submit"] {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+input, button, textarea {
+    font: inherit;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+ion-icon {
+    pointer-events: none;
+}
+
+/* Variables */
+:root {
+    --background: rgb(248, 246, 227);
+
+    --primary: rgb(151, 231, 225);
+    --on-primary: rgb(0, 0, 0);
+    --primary-variant: rgb(65, 201, 226);
+
+    --secondary: rgb(0, 141, 218);
+
+    --surface: rgb(255, 255, 255);
+    --on-surface: rgb(0, 0, 0);
+
+    --error: rgb(255, 0, 0);
+}
+
+/* Body */
+body {
+    background: var(--background);
+    font-size: 16px;
+    position: relative;
+
+    header {
+        position: fixed;
+    }
+
+    main {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+    }
+}
