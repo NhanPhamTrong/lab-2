@@ -31,6 +31,7 @@
                 include "./pages/" . $_GET["page"] . "/" . $_GET["page"] . ".php"
         ?>
     </main>
+    Some new things
 
     <!-- Footer -->
     <footer></footer>
